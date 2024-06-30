@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from "vue";
+import Navbar from "./components/Navbar.vue";
+import AboutMe from "./components/AboutMe.vue";
+import Projects from "./components/Projects.vue";
 
 // Riferimenti agli elementi DOM
 const stickyWrap = ref<HTMLElement | null>(null);
@@ -8,7 +11,7 @@ const stickyWrap = ref<HTMLElement | null>(null);
 function transform(section: HTMLElement) {
   const offsetTop = section.parentElement?.offsetTop || 0;
   const scrollSection = section.querySelector(
-    ".horizontal_scroll"
+    ".horizontal-scroll"
   ) as HTMLElement;
 
   let percentage = ((window.scrollY - offsetTop) / window.innerHeight) * 100;
@@ -33,30 +36,22 @@ onMounted(() => {
 </script>
 
 <template>
+  <Navbar />
   <main>
-    <!-- <section>
-      <div class="container">
-        <h1>Hybrid Scrolling</h1>
-        <p>Dummy text dummy text dummy text dummy text dummy text.</p>
-      </div>
-    </section> -->
-
-    <div class="scroll_container">
-      <div ref="stickyWrap" class="sticky_wrap">
-        <div class="horizontal_scroll">
-          <div class="scroll_contents red">
-            <h2 class="left">Hello</h2>
+    <div class="scroll-container">
+      <div ref="stickyWrap" class="sticky-wrap">
+        <div class="horizontal-scroll">
+          <div class="scroll-contents red" id="about-me">
+            <AboutMe />
           </div>
-          <!-- <div class="scroll_contents yellow"></div>
-          <div class="scroll_contents green"></div> -->
-          <div class="scroll_contents blue">
-            <h2 class="right">Goodbye</h2>
+          <div class="scroll-contents blue">
+            <Projects />
           </div>
         </div>
       </div>
     </div>
 
-    <section>
+    <section id="contact">
       <div class="container">
         <h1>The End</h1>
         <p>Dummy text dummy text dummy text dummy text dummy text.</p>
