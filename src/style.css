@@ -36,7 +36,7 @@ section {
 }
 
 .scroll_container {
-  height: 400vh;
+  height: 200vh;
 }
 
 .horizontal_scroll {
@@ -63,14 +63,6 @@ section {
 
 .red {
   background-color: #ff3d00;
-}
-
-.yellow {
-  background-color: #ffff00;
-}
-
-.green {
-  background-color: #05ff00;
 }
 
 .blue {

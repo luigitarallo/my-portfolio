@@ -1,0 +1,69 @@
+@import "./bootstrap/scss/bootstrap";
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "IBM Plex Mono";
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+main {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #f7f7f7;
+  color: #010101;
+}
+
+section {
+  height: 100vh;
+}
+
+.scroll-container {
+  height: 200vh;
+}
+
+.horizontal-scroll {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 200vw;
+  will-change: transform;
+  display: flex;
+  justify-content: space-between;
+}
+
+.scroll-contents {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sticky-wrap {
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+//------------
+// DEBUG //
+//------------
+
+.red {
+  background-color: #ff3d00;
+}
+
+.blue {
+  background-color: #2835f8;
+}
