@@ -28,29 +28,22 @@
     align-items: center;
     width: 30rem;
     height: 30rem;
-    border: 5px, dotted, white;
-    // background: conic-gradient(
-    //   from 90deg,
-    //   #0000 0deg,
-    //   #0000 50deg,
-    //   #3b3939 50deg,
-    //   #494646 55deg,
-    //   #0000 55deg,
-    //   #0000 360deg
-    // );
+    border-width: 6px;
+    border-style: solid solid hidden hidden;
+    border-color: rgba(255, 253, 253, 1);
     border-radius: 50%;
     position: relative;
     &::before {
       content: "";
       position: absolute;
-      top: -5px;
-      left: -5px;
-      width: calc(100% - 10px);
-      height: calc(100% - 10px);
+      top: -3px;
+      left: -3px;
+      width: calc(100% - 6px);
+      height: calc(100% - 6px);
       border-radius: 50%;
-      border: 10px solid transparent;
-      border-left-color: whitesmoke;
-      animation: rotate 2s linear infinite;
+      border: 6px solid transparent;
+      border-left-color: rgba(245, 245, 245, 1);
+      animation: rotate 5s linear infinite;
     }
     @keyframes rotate {
       0% {
@@ -70,7 +63,7 @@
       position: absolute;
       border: 1px, dotted, yellow;
       width: 18rem;
-      top: 7rem;
+      top: 12rem;
       left: -10rem;
     }
 
