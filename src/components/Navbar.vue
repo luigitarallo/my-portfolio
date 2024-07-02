@@ -19,6 +19,10 @@
 
 <style scoped lang="scss">
 .navbar-fixed-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   top: 0;
   right: 0;
