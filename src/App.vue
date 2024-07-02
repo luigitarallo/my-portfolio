@@ -3,6 +3,7 @@ import { onMounted, onUnmounted, ref } from "vue";
 import Navbar from "./components/Navbar.vue";
 import AboutMe from "./components/AboutMe.vue";
 import Projects from "./components/Projects.vue";
+import TechSkills from "./components/TechSkills.vue";
 
 // Riferimenti agli elementi DOM
 const stickyWrap = ref<HTMLElement | null>(null);
@@ -45,17 +46,14 @@ onMounted(() => {
             <AboutMe />
           </div>
           <div class="scroll-contents blue">
-            <Projects />
+            <TechSkills />
           </div>
         </div>
       </div>
     </div>
 
-    <section id="contact">
-      <div class="container">
-        <h1>The End</h1>
-        <p>Dummy text dummy text dummy text dummy text dummy text.</p>
-      </div>
+    <section id="projects">
+      <Projects />
     </section>
   </main>
 </template>
