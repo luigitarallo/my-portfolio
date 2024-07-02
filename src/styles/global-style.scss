@@ -1,4 +1,5 @@
-@import "./bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 ::-webkit-scrollbar {
   width: 0px;
 }
@@ -6,9 +7,13 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: "IBM Plex Mono";
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  list-style: none;
+}
+a {
+  text-decoration: none;
 }
 
 html,
@@ -16,15 +21,6 @@ body,
 main {
   width: 100%;
   height: 100%;
-}
-
-body {
-  background-color: #f7f7f7;
-  color: #010101;
-}
-
-section {
-  height: 100vh;
 }
 
 .scroll-container {
