@@ -1,6 +1,5 @@
-<script setup lang="ts"></script>
 <template>
-  <div class="about-container">
+  <div class="about-container" :style="{ opacity: aboutContainerOpacity }">
     <div class="external-circle">
       <div class="circle"></div>
       <div class="about-text">
@@ -14,6 +13,48 @@
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import { ref, onMounted, onUnmounted } from "vue";
+
+const aboutContainerOpacity = ref(1); // Opacità iniziale
+
+onMounted(() => {
+  window.addEventListener("scroll", updateScrollPosition);
+  window.addEventListener("resize", updateScrollPosition);
+});
+
+onUnmounted(() => {
+  window.removeEventListener("scroll", updateScrollPosition);
+  window.removeEventListener("resize", updateScrollPosition);
+});
+
+const updateScrollPosition = () => {
+  const aboutContainer = document.querySelector(".about-container");
+  if (aboutContainer) {
+    const rect = aboutContainer.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    // Calcola la posizione dello scroll rispetto all'inizio dell'elemento nella finestra visibile
+    const visibleThreshold = windowHeight - rect.height;
+    const scrollPosition = window.scrollY + visibleThreshold;
+
+    // Calcola l'opacità in base alla posizione di scroll
+    const maxScroll = windowHeight + rect.height;
+    const scrollFactor = 1.2;
+    let opacity = Math.max(0, 1 - (scrollFactor * scrollPosition) / maxScroll);
+
+    // Assicura che l'opacità sia esattamente 1 quando siamo in cima alla pagina
+    if (window.scrollY <= visibleThreshold) {
+      opacity = 1;
+    }
+
+    // Aggiorna il valore di ref con il nuovo valore di opacità calcolato
+    aboutContainerOpacity.value = opacity;
+  }
+};
+</script>
+
 <style scoped lang="scss">
 .about-container {
   display: flex;
@@ -21,7 +62,7 @@
   align-items: center;
   width: 40rem;
   height: 40rem;
-
+  transition: opacity 0.3s linear;
   .external-circle {
     display: flex;
     justify-content: center;
@@ -61,7 +102,7 @@
     }
     .about-text {
       position: absolute;
-      border: 1px, dotted, yellow;
+      border: 1px dotted yellow;
       width: 18rem;
       top: 12rem;
       left: -10rem;
