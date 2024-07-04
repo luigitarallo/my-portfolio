@@ -1,19 +1,3 @@
-<template>
-  <div class="about-container" :style="{ opacity: aboutContainerOpacity }">
-    <div class="external-circle">
-      <div class="circle"></div>
-      <div class="about-text">
-        <h1>Hello.</h1>
-        <h2>My name is Luigi</h2>
-        <p>
-          I am a full stack web developer Lorem, ipsum dolor sit amet
-          consectetur adipisicing elit. Ducimus, dolores.
-        </p>
-      </div>
-    </div>
-  </div>
-</template>
-
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted } from "vue";
 
@@ -32,17 +16,20 @@ onUnmounted(() => {
 const updateScrollPosition = () => {
   const aboutContainer = document.querySelector(".about-container");
   if (aboutContainer) {
-    const rect = aboutContainer.getBoundingClientRect();
-    const windowHeight = window.innerHeight;
+    const rect: DOMRect = aboutContainer.getBoundingClientRect();
+    const windowHeight: number = window.innerHeight;
 
     // Calcola la posizione dello scroll rispetto all'inizio dell'elemento nella finestra visibile
-    const visibleThreshold = windowHeight - rect.height;
-    const scrollPosition = window.scrollY + visibleThreshold;
+    const visibleThreshold: number = windowHeight - rect.height;
+    const scrollPosition: number = window.scrollY + visibleThreshold;
 
     // Calcola l'opacità in base alla posizione di scroll
-    const maxScroll = windowHeight + rect.height;
-    const scrollFactor = 1.2;
-    let opacity = Math.max(0, 1 - (scrollFactor * scrollPosition) / maxScroll);
+    const maxScroll: number = windowHeight + rect.height;
+    const scrollFactor: number = 1.2;
+    let opacity: number = Math.max(
+      0,
+      1 - (scrollFactor * scrollPosition) / maxScroll
+    );
 
     // Assicura che l'opacità sia esattamente 1 quando siamo in cima alla pagina
     if (window.scrollY <= visibleThreshold) {
@@ -54,7 +41,25 @@ const updateScrollPosition = () => {
   }
 };
 </script>
-
+<template>
+  <div class="about-container" :style="{ opacity: aboutContainerOpacity }">
+    <div class="small-circle first"></div>
+    <div class="small-circle second"></div>
+    <div class="small-circle third"></div>
+    <div class="small-circle fourth"></div>
+    <div class="external-circle">
+      <div class="circle"></div>
+      <div class="about-text">
+        <h1>Hello.</h1>
+        <h2>My name is Luigi</h2>
+        <p>
+          I am a full stack web developer Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. Ducimus, dolores.
+        </p>
+      </div>
+    </div>
+  </div>
+</template>
 <style scoped lang="scss">
 .about-container {
   display: flex;
@@ -63,6 +68,36 @@ const updateScrollPosition = () => {
   width: 40rem;
   height: 40rem;
   transition: opacity 0.3s linear;
+  position: relative;
+  .small-circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: blue;
+    &.first {
+      width: 6rem;
+      height: 6rem;
+      bottom: 0;
+      right: 0;
+    }
+    &.second {
+      width: 7rem;
+      height: 7rem;
+      top: -3rem;
+      right: 4rem;
+    }
+    &.third {
+      width: 4rem;
+      height: 4rem;
+      top: 4rem;
+      left: 3rem;
+    }
+    &.fourth {
+      width: 3rem;
+      height: 3rem;
+      bottom: 3rem;
+      left: 0;
+    }
+  }
   .external-circle {
     display: flex;
     justify-content: center;
