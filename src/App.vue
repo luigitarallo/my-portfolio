@@ -10,12 +10,13 @@ const stickyWrap = ref<HTMLElement | null>(null);
 
 // Funzione per la trasformazione
 function transform(section: HTMLElement) {
-  const offsetTop = section.parentElement?.offsetTop || 0;
-  const scrollSection = section.querySelector(
+  const offsetTop: number = section.parentElement?.offsetTop || 0;
+  const scrollSection: HTMLElement = section.querySelector(
     ".horizontal-scroll"
   ) as HTMLElement;
 
-  let percentage = ((window.scrollY - offsetTop) / window.innerHeight) * 100;
+  let percentage: number =
+    ((window.scrollY - offsetTop) / window.innerHeight) * 100;
   percentage = percentage < 0 ? 0 : percentage > 100 ? 100 : percentage;
 
   scrollSection.style.transform = `translate3d(${-percentage}vw, 0, 0)`;
@@ -23,7 +24,7 @@ function transform(section: HTMLElement) {
 
 // Aggiungi l'event listener allo scroll quando il componente è montato
 onMounted(() => {
-  const section = stickyWrap.value;
+  const section: HTMLElement | null = stickyWrap.value;
   if (section) {
     const onScroll = () => transform(section);
     window.addEventListener("scroll", onScroll);
@@ -45,7 +46,7 @@ onMounted(() => {
           <div class="scroll-contents red" id="about-me">
             <AboutMe />
           </div>
-          <div class="scroll-contents blue">
+          <div class="scroll-contents blue" id="tech-skills">
             <TechSkills />
           </div>
         </div>
