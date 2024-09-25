@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
-::-webkit-scrollbar {
-  width: 0px;
-}
+// ::-webkit-scrollbar {
+//   width: 0px;
+// }
 
 * {
   margin: 0px;
@@ -14,43 +14,44 @@
 }
 a {
   text-decoration: none;
+  color: white;
 }
 
-html,
-body,
-main {
-  width: 100%;
-  height: 100%;
-}
+// html,
+// body,
+// main {
+//   width: 100%;
+//   height: 100%;
+// }
 
-.scroll-container {
-  height: 200vh;
-}
+// .scroll-container {
+//   height: 200vh;
+// }
 
-.horizontal-scroll {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 200vw;
-  will-change: transform;
-  display: flex;
-  justify-content: space-between;
-}
+// .horizontal-scroll {
+//   position: absolute;
+//   top: 0;
+//   height: 100%;
+//   width: 200vw;
+//   will-change: transform;
+//   display: flex;
+//   justify-content: space-between;
+// }
 
-.scroll-contents {
-  height: 100%;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+// .scroll-contents {
+//   height: 100%;
+//   width: 100vw;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
 
-.sticky-wrap {
-  overflow: hidden;
-  position: sticky;
-  top: 0;
-  height: 100vh;
-}
+// .sticky-wrap {
+//   overflow: hidden;
+//   position: sticky;
+//   top: 0;
+//   height: 100vh;
+// }
 
 //------------
 // DEBUG //

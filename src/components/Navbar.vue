@@ -1,9 +1,7 @@
 <script setup lang="ts"></script>
 <template>
-  <nav
-    class="navbar navbar-fixed-right d-flex flex-column justify-content-center align-items-center"
-  >
-    <ul class="nav flex-column">
+  <nav class="navbar navbar-fixed">
+    <ul class="nav-links">
       <li class="nav-item">
         <a class="nav-link" href="#home">Home</a>
       </li>
@@ -18,24 +16,25 @@
 </template>
 
 <style scoped lang="scss">
-.navbar-fixed-right {
+.navbar-fixed {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: 0;
-  right: 0;
-  height: 100%; /* Altezza totale della finestra */
-  width: 5vw; /* Larghezza della navbar */
+  width: 100%;
+  height: 3rem;
   background-color: #333;
   color: white;
-  z-index: 1000; /* Assicurati che la navbar sia sopra altri contenuti */
+  z-index: 1000;
 
-  .nav-link {
+  .nav-links {
+    display: flex;
     color: white;
-    &:hover {
-      background-color: #444; /* Colore di sfondo al passaggio del mouse */
+    .nav-item {
+      padding: 0 0.5rem;
+      &:hover {
+        background-color: #444;
+      }
     }
   }
 }

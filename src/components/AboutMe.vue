@@ -65,8 +65,8 @@ const updateScrollPosition = () => {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40rem;
-  height: 40rem;
+  width: 100%;
+  height: 100vh;
   transition: opacity 0.3s linear;
   position: relative;
   .small-circle {
