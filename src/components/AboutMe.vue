@@ -60,7 +60,7 @@ const updateScrollPosition = () => {
     </div>
   </div>
 </template>
-<style scoped lang="scss">
+<style scoped lang="css">
 .about-container {
   display: flex;
   justify-content: center;
@@ -69,93 +69,94 @@ const updateScrollPosition = () => {
   height: 100vh;
   transition: opacity 0.3s linear;
   position: relative;
-  .small-circle {
+}
+.external-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  height: 30rem;
+  border-width: 6px;
+  border-style: solid solid hidden hidden;
+  border-color: rgba(255, 253, 253, 1);
+  border-radius: 50%;
+  position: relative;
+  &::before {
+    content: "";
     position: absolute;
+    top: -3px;
+    left: -3px;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
     border-radius: 50%;
-    background-color: blue;
-    &.first {
-      width: 6rem;
-      height: 6rem;
-      bottom: 0;
-      right: 0;
+    border: 6px solid transparent;
+    border-left-color: rgba(245, 245, 245, 1);
+    animation: rotate 5s linear infinite;
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
     }
-    &.second {
-      width: 7rem;
-      height: 7rem;
-      top: -3rem;
-      right: 4rem;
-    }
-    &.third {
-      width: 4rem;
-      height: 4rem;
-      top: 4rem;
-      left: 3rem;
-    }
-    &.fourth {
-      width: 3rem;
-      height: 3rem;
-      bottom: 3rem;
-      left: 0;
+    100% {
+      transform: rotate(360deg);
     }
   }
-  .external-circle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30rem;
-    height: 30rem;
-    border-width: 6px;
-    border-style: solid solid hidden hidden;
-    border-color: rgba(255, 253, 253, 1);
-    border-radius: 50%;
-    position: relative;
-    &::before {
-      content: "";
-      position: absolute;
-      top: -3px;
-      left: -3px;
-      width: calc(100% - 6px);
-      height: calc(100% - 6px);
-      border-radius: 50%;
-      border: 6px solid transparent;
-      border-left-color: rgba(245, 245, 245, 1);
-      animation: rotate 5s linear infinite;
-    }
-    @keyframes rotate {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-    .circle {
-      width: 20rem;
-      height: 20rem;
-      background-color: blue;
-      border-radius: 50%;
-    }
-    .about-text {
-      position: absolute;
-      border: 1px dotted yellow;
-      width: 18rem;
-      top: 12rem;
-      left: -10rem;
-    }
+}
+.circle {
+  width: 20rem;
+  height: 20rem;
+  background-color: blue;
+  border-radius: 50%;
+}
+.about-text {
+  position: absolute;
+  border: 1px dotted yellow;
+  width: 18rem;
+  top: 12rem;
+  left: -10rem;
+}
 
-    h1 {
-      font-size: 5rem;
-      font-weight: 400;
-    }
+h1 {
+  font-size: 5rem;
+  font-weight: 400;
+}
 
-    h2 {
-      font-size: 1.5rem;
-      font-weight: 300;
-    }
+h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
 
-    p {
-      font-size: 1.3rem;
-    }
+p {
+  font-size: 1.3rem;
+}
+
+.small-circle {
+  position: absolute;
+  border-radius: 50%;
+  background-color: blue;
+  &.first {
+    width: 6rem;
+    height: 6rem;
+    bottom: 0;
+    right: 0;
+  }
+  &.second {
+    width: 7rem;
+    height: 7rem;
+    top: -3rem;
+    right: 4rem;
+  }
+  &.third {
+    width: 4rem;
+    height: 4rem;
+    top: 4rem;
+    left: 3rem;
+  }
+  &.fourth {
+    width: 3rem;
+    height: 3rem;
+    bottom: 3rem;
+    left: 0;
   }
 }
 </style>

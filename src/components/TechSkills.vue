@@ -81,7 +81,7 @@ const updateTextContainer = (slice: SliceType) => {
   </div>
 </template>
 
-<style scoped lang="scss">
+<style scoped lang="css">
 .container {
   display: flex;
   justify-content: space-evenly;

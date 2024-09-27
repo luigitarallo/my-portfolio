@@ -15,7 +15,7 @@
   </nav>
 </template>
 
-<style scoped lang="scss">
+<style scoped lang="css">
 .navbar-fixed {
   display: flex;
   justify-content: center;
@@ -26,15 +26,14 @@
   background-color: #333;
   color: white;
   z-index: 1000;
-
-  .nav-links {
-    display: flex;
-    color: white;
-    .nav-item {
-      padding: 0 0.5rem;
-      &:hover {
-        background-color: #444;
-      }
+}
+.nav-links {
+  display: flex;
+  color: white;
+  .nav-item {
+    padding: 0 0.5rem;
+    &:hover {
+      background-color: #444;
     }
   }
 }
