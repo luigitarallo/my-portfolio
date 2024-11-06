@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: auto;
+  height: 5rem;
+}
+
+header > ol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 5rem;
+}
