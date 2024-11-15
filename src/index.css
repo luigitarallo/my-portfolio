@@ -20,7 +20,7 @@ a {
 
 nav {
   position: sticky;
-  margin-top: 0.3rem;
+  padding-top: 0.3rem;
 }
 
 nav > ul {
