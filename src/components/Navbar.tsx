@@ -1,7 +1,7 @@
 export function Navbar() {
   return (
     <nav>
-      <ol>
+      <ul>
         <li>
           <a href="">home</a>
         </li>
@@ -11,7 +11,7 @@ export function Navbar() {
         <li>
           <a href="">works</a>
         </li>
-      </ol>
+      </ul>
     </nav>
   );
 }
