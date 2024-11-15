@@ -1,6 +1,14 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+body,
+html {
   margin: 0;
   padding: 0;
+  height: 100%;
+  background-color: black;
+}
+
+* {
   box-sizing: border-box;
 }
 
@@ -9,16 +17,26 @@ a {
   color: inherit;
 }
 
-nav > ol {
+nav {
+  position: sticky;
+  margin-top: 0.3rem;
+}
+
+nav > ul {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 3rem;
-  margin: 0;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  width: 30%;
+  margin: 0 auto;
   padding: 0;
 }
 
 nav li {
+  font-family: "Space Mono", monospace;
   list-style: none;
   padding: 0 1rem;
 }
