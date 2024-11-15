@@ -4,15 +4,21 @@ body {
   box-sizing: border-box;
 }
 
-header {
-  width: auto;
-  height: 5rem;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-header > ol {
+nav > ol {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 3rem;
   margin: 0;
-  height: 5rem;
+  padding: 0;
+}
+
+nav li {
+  list-style: none;
+  padding: 0 1rem;
 }
