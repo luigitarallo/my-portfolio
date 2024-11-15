@@ -5,7 +5,7 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: black;
+  background-color: red;
 }
 
 * {
@@ -15,6 +15,7 @@ html {
 a {
   text-decoration: none;
   color: inherit;
+  position: relative;
 }
 
 nav {
@@ -39,4 +40,19 @@ nav li {
   font-family: "Space Mono", monospace;
   list-style: none;
   padding: 0 1rem;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #78b7ff;
+  transition: width 0.3s ease-in-out;
+}
+
+nav li:hover a::after {
+  width: 100%;
 }
