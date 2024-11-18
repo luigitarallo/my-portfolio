@@ -52,11 +52,11 @@ nav li:hover a::after {
 
 @media screen and (max-width: 610px) {
   nav ul {
-    width: 50%;
+    width: 60%;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 430px) {
   nav ul {
     width: 70%;
   }
