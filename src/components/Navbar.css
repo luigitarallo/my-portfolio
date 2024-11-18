@@ -11,18 +11,19 @@ nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 3rem;
-  backdrop-filter: blur(1px);
-  background-color: rgba(255, 253, 253, 0.15);
-  border-radius: 3px;
+  height: 4rem;
   width: 20%;
   margin: 0 auto;
   padding: 0;
+  backdrop-filter: blur(1px);
+  background-color: rgba(255, 253, 253, 0.15);
+  border-radius: 3px;
   box-shadow: rgba(36, 36, 36, 0.815) 0px 5px 5px;
 }
 
 nav li {
   font-family: "Space Mono", monospace;
+  font-size: 1.5rem;
   list-style: none;
   padding: 0 1rem;
   color: #d9d9d9;
@@ -41,4 +42,22 @@ a::after {
 
 nav li:hover a::after {
   width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  nav ul {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  nav ul {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav ul {
+    width: 70%;
+  }
 }
