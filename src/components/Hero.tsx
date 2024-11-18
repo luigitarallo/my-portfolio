@@ -1,9 +1,28 @@
+import React, { useEffect, useState } from "react";
 import "./Hero.css";
 export function Hero() {
+  const [offsetY, setOffsetY] = useState(0);
+
+  const handleScroll = () => {
+    setOffsetY(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <section className="hero">
+    <section
+      className="hero"
+      style={{
+        backgroundPositionY: `${offsetY * 0.5}px`,
+      }}
+    >
       <div className="container">
-        <div className="about-me debug-1">
+        <div className="about-me">
           <h1>Hi there.</h1>
           <p>
             I’m<span> Luigi Tarallo </span> a
