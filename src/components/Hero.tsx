@@ -23,16 +23,14 @@ export function Hero() {
       }}
     >
       <div className="container">
-        <div className="about-me">
-          <h1>Hi there.</h1>
-          <p>
-            I’m<span> Luigi Tarallo </span> a
-            <span> Full Stack Web Developer </span>
-            passionate about<span> technology </span>
-            and focused on building modern, efficient
-            <span> web applications</span>.
-          </p>
-        </div>
+        <h1>Hi there.</h1>
+        <p>
+          I’m<span> Luigi Tarallo </span> a
+          <span> Full Stack Web Developer </span>
+          passionate about<span> technology </span>
+          and focused on building modern, efficient
+          <span> web applications</span>.
+        </p>
       </div>
       <div className="arrow-box">
         <svg
