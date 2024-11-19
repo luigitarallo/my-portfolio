@@ -2,10 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 body,
 html {
-  height: 200%;
   background-color: #252525;
   position: relative;
 }
+
+/** Classi Debug */
 
 .debug {
   border: 1px solid red;
@@ -13,31 +14,18 @@ html {
 .debug-1 {
   border: 1px dotted rgb(24, 218, 252);
 }
+
+/** RESET */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-button {
-  font-family: "Space Mono", monospace;
-  font-size: 1.5rem;
-  border: none;
-  text-decoration: none;
-  background-color: transparent;
-  text-align: center;
-  text-decoration: none;
-  color: #d9d9d9;
-  position: relative;
-}
-
 .container {
-  margin: 0 7rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 @media screen and (max-width: 992px) {
