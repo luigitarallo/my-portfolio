@@ -1,6 +1,7 @@
 #about {
   margin: 3rem 0;
   width: 100%;
+  position: relative;
 }
 
 #about h2 {
@@ -13,9 +14,15 @@
 #about p {
   color: #a5a5a5;
   font-family: "Space Mono", monospace;
-  margin-top: 1rem;
+  margin: 1.5rem 0;
+  font-size: 1.2rem;
 }
 
 #about p > span {
   color: #d9d9d9;
+}
+
+.about-text {
+  padding-bottom: 3rem;
+  border-bottom: #78b7ff 2px solid;
 }
