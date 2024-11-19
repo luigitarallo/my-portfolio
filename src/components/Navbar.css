@@ -17,7 +17,7 @@ nav ul {
   padding: 0;
   backdrop-filter: blur(1px);
   background-color: rgba(255, 253, 253, 0.15);
-  border-radius: 3px;
+  border-radius: 5px;
   box-shadow: rgba(36, 36, 36, 0.815) 0px 5px 5px;
 }
 
@@ -29,7 +29,7 @@ nav li {
   color: #d9d9d9;
 }
 
-a::after {
+button:after {
   content: "";
   position: absolute;
   bottom: -2px;
@@ -40,11 +40,23 @@ a::after {
   transition: width 0.3s ease-in-out;
 }
 
-nav li:hover a::after {
+nav li:hover button::after {
   width: 100%;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1440px) {
+  nav ul {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  nav ul {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 920px) {
   nav ul {
     width: 40%;
   }
@@ -58,6 +70,6 @@ nav li:hover a::after {
 
 @media screen and (max-width: 430px) {
   nav ul {
-    width: 70%;
+    width: 80%;
   }
 }
