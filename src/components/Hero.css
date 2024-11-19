@@ -51,7 +51,7 @@ p > span {
   align-items: center;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 920px) {
   .hero h1 {
     font-size: 6rem;
   }
@@ -67,7 +67,7 @@ p > span {
   }
 
   .hero p {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
 }
 
@@ -77,6 +77,6 @@ p > span {
   }
 
   .hero p {
-    font-size: 2.3rem;
+    font-size: 2rem;
   }
 }
