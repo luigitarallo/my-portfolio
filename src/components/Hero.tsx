@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./Hero.css";
 export function Hero() {
   const [offsetY, setOffsetY] = useState(0);
@@ -16,9 +16,10 @@ export function Hero() {
 
   return (
     <section
+      id="home"
       className="hero"
       style={{
-        backgroundPositionY: `${offsetY * 0.5}px`,
+        backgroundPositionY: `${offsetY * 0.3}px`,
       }}
     >
       <div className="container">
