@@ -1,17 +1,23 @@
 import "./Navbar.css";
 
 export function Navbar() {
+  const scrollToSection = (id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <nav>
       <ul>
         <li>
-          <a href="">home</a>
+          <button onClick={() => scrollToSection("home")}>home</button>
         </li>
         <li>
-          <a href="">about</a>
+          <button onClick={() => scrollToSection("about")}>about</button>
         </li>
         <li>
-          <a href="">works</a>
+          <button onClick={() => scrollToSection("works")}>works</button>
         </li>
       </ul>
     </nav>
