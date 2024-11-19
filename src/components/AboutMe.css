@@ -1,0 +1,21 @@
+#about {
+  margin: 3rem 0;
+  width: 100%;
+}
+
+#about h2 {
+  color: #78b7ff;
+  font-size: 4rem;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 400;
+}
+
+#about p {
+  color: #a5a5a5;
+  font-family: "Space Mono", monospace;
+  margin-top: 1rem;
+}
+
+#about p > span {
+  color: #d9d9d9;
+}
