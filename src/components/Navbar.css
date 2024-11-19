@@ -29,7 +29,11 @@ nav li {
   color: #d9d9d9;
 }
 
-button {
+nav button:hover {
+  cursor: pointer;
+}
+
+nav button {
   font-family: "Space Mono", monospace;
   font-size: 1.5rem;
   border: none;
@@ -41,7 +45,7 @@ button {
   position: relative;
 }
 
-button:after {
+nav button:after {
   content: "";
   position: absolute;
   bottom: -2px;
