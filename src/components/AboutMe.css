@@ -43,26 +43,23 @@
   font-family: "Space Mono", monospace;
   font-size: 2rem;
   font-weight: 400;
-  width: 25%;
-  margin: 2rem 0;
+  width: 15%;
+  padding: 2rem 1rem;
 }
 
 .stack-type ul {
-  margin: 0;
-  padding: 0;
-  width: 60%;
-  list-style: none;
+  width: 65%;
   display: flex;
   justify-content: start;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 3rem;
   align-items: center;
   color: #d9d9d9;
   font-family: "Space Mono", monospace;
 }
 
 .tech-line {
-  width: 15%;
+  width: 20%;
   display: flex;
   align-items: center;
 }
@@ -78,4 +75,19 @@
   height: 0.3rem;
   margin-right: 0.5rem;
   background-color: #78b7ff;
+}
+
+@media screen and (max-width: 1440px) {
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 920px) {
+}
+
+@media screen and (max-width: 610px) {
+}
+
+@media screen and (max-width: 430px) {
 }
