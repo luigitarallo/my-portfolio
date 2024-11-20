@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "./Hero.css";
 export function Hero() {
   const [offsetY, setOffsetY] = useState(0);
-  const maxScroll = 1000;
+  const maxScroll = 600;
 
   const handleScroll = () => {
     setOffsetY(Math.min(window.scrollY, maxScroll));
