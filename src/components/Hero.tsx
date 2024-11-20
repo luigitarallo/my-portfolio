@@ -2,9 +2,10 @@ import { useEffect, useState } from "react";
 import "./Hero.css";
 export function Hero() {
   const [offsetY, setOffsetY] = useState(0);
+  const maxScroll = 1000;
 
   const handleScroll = () => {
-    setOffsetY(window.scrollY);
+    setOffsetY(Math.min(window.scrollY, maxScroll));
   };
 
   useEffect(() => {
@@ -32,7 +33,12 @@ export function Hero() {
           <span> web applications</span>.
         </p>
       </div>
-      <div className="arrow-box">
+      <div
+        className="arrow-box"
+        style={{
+          opacity: `${1 - offsetY / maxScroll}`,
+        }}
+      >
         <svg
           width="40"
           height="40"
