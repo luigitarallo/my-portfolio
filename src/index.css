@@ -22,6 +22,12 @@ html {
   padding: 0;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   max-width: 100%;
   margin: 0 11rem;
