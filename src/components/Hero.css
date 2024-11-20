@@ -4,7 +4,7 @@
       rgba(11, 11, 11, 0.3),
       rgba(0, 0, 0, 0.8)
     ),
-    url("hero-image.jpg");
+    url("../assets/hero-image.jpg");
   background-position: center top;
   background-size: cover;
   height: 100vh;
@@ -31,7 +31,7 @@ p > span {
 
 .arrow-box {
   position: absolute;
-  bottom: 0.3rem;
+  bottom: 5rem;
   left: 50%;
   height: 3.5rem;
   width: 3.5rem;
@@ -73,10 +73,10 @@ p > span {
 
 @media screen and (max-width: 430px) {
   .hero h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .hero p {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
