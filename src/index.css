@@ -15,7 +15,7 @@ html {
   border: 1px dotted rgb(24, 218, 252);
 }
 
-/** RESET */
+/*** RESET ***/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -28,6 +28,7 @@ ul {
   padding: 0;
 }
 
+/*** Utility Class ***/
 .container {
   max-width: 100%;
   margin: 0 11rem;

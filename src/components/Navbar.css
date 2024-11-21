@@ -60,6 +60,10 @@ nav li:hover button::after {
   width: 100%;
 }
 
+/*******************/
+/*** MEDIA QUERY ***/
+/*******************/
+
 @media screen and (max-width: 1440px) {
   nav ul {
     width: 25%;
