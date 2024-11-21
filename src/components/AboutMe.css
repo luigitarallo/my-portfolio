@@ -1,5 +1,5 @@
 #about {
-  margin: 3rem 0;
+  margin: 5rem 0;
   width: 100%;
   position: relative;
 }
@@ -93,18 +93,15 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
-}
-
 @media screen and (max-width: 920px) {
   .stack-type {
     flex-wrap: wrap;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
 
   .tech-icons {
     width: 100%;
-    justify-content: center;
+    justify-content: start;
   }
   .tech-line {
     width: 100%;
