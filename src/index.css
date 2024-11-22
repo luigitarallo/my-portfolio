@@ -34,6 +34,13 @@ ul {
   margin: 0 11rem;
 }
 
+h2 {
+  font-size: 4rem;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
 @media screen and (max-width: 1400px) {
   .container {
     max-width: 1320px;
