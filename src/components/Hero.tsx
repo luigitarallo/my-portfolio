@@ -1,13 +1,17 @@
 import { useEffect, useState } from "react";
 import "./Hero.css";
 export function Hero() {
+  // useState to check offsetY
   const [offsetY, setOffsetY] = useState(0);
+  // maxScroll to avoid bg slide over
   const maxScroll = 800;
 
+  // function to set the offsetY
   const handleScroll = () => {
     setOffsetY(Math.min(window.scrollY, maxScroll));
   };
 
+  // effect to add listener on scroll
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -19,6 +23,7 @@ export function Hero() {
     <section
       id="home"
       className="hero"
+      // change background position dynamically
       style={{
         backgroundPositionY: `${offsetY * 0.3}px`,
       }}
@@ -35,6 +40,7 @@ export function Hero() {
       </div>
       <div
         className="arrow-box"
+        // change opacity dynamically on scroll
         style={{
           opacity: `${1 - offsetY / maxScroll}`,
         }}
