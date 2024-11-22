@@ -1,14 +1,11 @@
 #about {
-  margin: 5rem 0;
+  padding: 5rem 0;
   width: 100%;
   position: relative;
 }
 
 #about h2 {
   color: #78b7ff;
-  font-size: 4rem;
-  font-family: "Roboto Flex", sans-serif;
-  font-weight: 400;
 }
 
 #about p {
@@ -26,10 +23,6 @@
   padding-bottom: 3rem;
   margin-bottom: 3rem;
   border-bottom: #78b7ff 2px solid;
-}
-
-.tech-stack h2 {
-  margin-bottom: 3rem;
 }
 
 .stack-type {
