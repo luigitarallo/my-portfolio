@@ -15,18 +15,24 @@ nav ul {
   width: 20%;
   margin: 0 auto;
   padding: 0;
-  backdrop-filter: blur(1px);
-  background-color: rgba(255, 253, 253, 0.15);
+  backdrop-filter: blur(4px);
+  background-color: rgba(255, 253, 253, 0.2);
   border-radius: 5px;
   box-shadow: rgba(36, 36, 36, 0.815) 0px 5px 5px;
+  transition: color 0.5s ease, background-color 0.3s ease;
 }
 
 nav li {
-  font-family: "Space Mono", monospace;
   font-size: 1.5rem;
   list-style: none;
   padding: 0 1rem;
+}
+
+.text-light {
   color: #d9d9d9;
+}
+.text-dark {
+  color: #252525;
 }
 
 nav button:hover {
@@ -41,8 +47,8 @@ nav button {
   background-color: transparent;
   text-align: center;
   text-decoration: none;
-  color: #d9d9d9;
   position: relative;
+  transition: color 0.5s ease;
 }
 
 nav button:after {
