@@ -1,3 +1,5 @@
+import "./Footer.css";
+
 export function Footer() {
-  return <p>Ciao sono il footer</p>;
+  return <footer>Sono il footer</footer>;
 }
