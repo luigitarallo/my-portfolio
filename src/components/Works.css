@@ -4,10 +4,6 @@
   padding: 5rem 0;
 }
 
-#works h2 {
-  color: #78b7ff;
-}
-
 .projects-row {
   display: flex;
   flex-wrap: wrap;
