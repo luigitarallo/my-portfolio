@@ -41,6 +41,16 @@ h2 {
   margin-bottom: 3rem;
 }
 
+button {
+  font-family: "Space Mono", monospace;
+  border: none;
+  text-decoration: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1400px) {
   .container {
     max-width: 1320px;
