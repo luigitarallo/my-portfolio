@@ -15,7 +15,7 @@ nav ul {
   width: 20%;
   margin: 0 auto;
   padding: 0;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(1px);
   background-color: rgba(255, 253, 253, 0.2);
   border-radius: 5px;
   box-shadow: rgba(36, 36, 36, 0.815) 0px 5px 5px;
@@ -34,7 +34,8 @@ nav button {
   text-align: center;
   position: relative;
   transition: color 0.5s ease;
-  color: #d9d9d9;
+  color: #a5a5a5;
+  transition: color 0.3s ease;
 }
 
 nav button:after {
@@ -46,6 +47,10 @@ nav button:after {
   height: 3px;
   background-color: #78b7ff;
   transition: width 0.3s ease-in-out;
+}
+
+nav button:hover {
+  color: #d9d9d9;
 }
 
 nav li:hover button::after {
