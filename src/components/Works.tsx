@@ -5,51 +5,51 @@ import porfolioImg from "../assets/portfolio-screen.png";
 
 export function Works() {
   return (
-    <section id="works" className="debug-1">
+    <section id="works">
       <div className="container">
         <h2>Works</h2>
-        <div className="projects-row debug-1">
+        <div className="projects-row">
           <div className="project-col">
             <div className="project">
               <div className="image-container">
-                <img src={boolfixImg} alt="boolf ix preview" />
+                <img src={boolfixImg} alt="boolflix preview" />
               </div>
               <div className="buttons">
-                <button>Demo</button>
-                <button>GitHub</button>
+                <button className="demo-button">Demo</button>
+                <button className="github-button">GitHub</button>
               </div>
             </div>
           </div>
           <div className="project-col">
             <div className="project">
               <div className="image-container">
-                <img src={boolfixImg} alt="boolf ix preview" />
+                <img src={tictactoeImg} alt="tic-tac-toe preview" />
               </div>
               <div className="buttons">
-                <button>Demo</button>
-                <button>GitHub</button>
+                <button className="demo-button">Demo</button>
+                <button className="github-button">GitHub</button>
               </div>
             </div>
           </div>
-          <div className="project-col debug">
+          <div className="project-col ">
             <div className="project">
               <div className="image-container">
-                <img src={tictactoeImg} alt="boolf ix preview" />
+                <img src={tictactoeImg} alt="tic-tac-toe preview" />
               </div>
               <div className="buttons">
-                <button>Demo</button>
-                <button>GitHub</button>
+                <button className="demo-button">Demo</button>
+                <button className="github-button">GitHub</button>
               </div>
             </div>
           </div>
-          <div className="project-col debug">
+          <div className="project-col ">
             <div className="project">
               <div className="image-container">
-                <img src={porfolioImg} alt="boolflix preview" />
+                <img src={porfolioImg} alt="portfolio preview" />
               </div>
               <div className="buttons">
-                <button>Demo</button>
-                <button>GitHub</button>
+                <button className="demo-button">Demo</button>
+                <button className="github-button">GitHub</button>
               </div>
             </div>
           </div>
