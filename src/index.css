@@ -28,6 +28,11 @@ ul {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /*** Utility Class ***/
 .container {
   max-width: 100%;
