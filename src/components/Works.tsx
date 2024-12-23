@@ -15,8 +15,28 @@ export function Works() {
                 <img src={boolfixImg} alt="boolflix preview" />
               </div>
               <div className="buttons">
-                <button className="demo-button">Demo</button>
-                <button className="github-button">GitHub</button>
+                <button
+                  className="demo-button"
+                  onClick={() => {
+                    window.open(
+                      "https://vite-boolflix-olive.vercel.app/",
+                      "_blank"
+                    );
+                  }}
+                >
+                  Demo
+                </button>
+                <button
+                  className="github-button"
+                  onClick={() => {
+                    window.open(
+                      "https://github.com/luigitarallo/vite-boolflix",
+                      "_blank"
+                    );
+                  }}
+                >
+                  GitHub
+                </button>
               </div>
             </div>
           </div>
@@ -26,8 +46,28 @@ export function Works() {
                 <img src={tictactoeImg} alt="tic-tac-toe preview" />
               </div>
               <div className="buttons">
-                <button className="demo-button">Demo</button>
-                <button className="github-button">GitHub</button>
+                <button
+                  className="demo-button"
+                  onClick={() => {
+                    window.open(
+                      "https://tic-tac-toe-react-course.vercel.app/",
+                      "_blank"
+                    );
+                  }}
+                >
+                  Demo
+                </button>
+                <button
+                  className="github-button"
+                  onClick={() => {
+                    window.open(
+                      "https://github.com/luigitarallo/starting-project-tic-tac-toe",
+                      "_blank"
+                    );
+                  }}
+                >
+                  GitHub
+                </button>
               </div>
             </div>
           </div>
