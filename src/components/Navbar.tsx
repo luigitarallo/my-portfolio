@@ -1,4 +1,5 @@
 import "./Navbar.css";
+import { NavLink } from "./NavLink";
 
 export function Navbar() {
   // function to go to a specific section when clicking nav links
@@ -11,15 +12,9 @@ export function Navbar() {
   return (
     <nav>
       <ul>
-        <li>
-          <button onClick={() => scrollToSection("home")}>home</button>
-        </li>
-        <li>
-          <button onClick={() => scrollToSection("about")}>about</button>
-        </li>
-        <li>
-          <button onClick={() => scrollToSection("works")}>works</button>
-        </li>
+        <NavLink label="Home" targetId="home" onClick={scrollToSection} />
+        <NavLink label="About" targetId="about" onClick={scrollToSection} />
+        <NavLink label="Works" targetId="works" onClick={scrollToSection} />
       </ul>
     </nav>
   );
