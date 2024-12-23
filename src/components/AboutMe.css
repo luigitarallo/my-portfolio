@@ -76,6 +76,10 @@
   background-color: #78b7ff;
 }
 
+/**************** 
+* Media Queries * 
+****************/
+
 @media screen and (max-width: 1440px) {
   .tech-icons {
     width: 50%;
