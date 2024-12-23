@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import "./Hero.css";
+import { heroContent } from "../data/data";
+
 export function Hero() {
   // useState to check offsetY
   const [offsetY, setOffsetY] = useState(0);
@@ -29,14 +31,12 @@ export function Hero() {
       }}
     >
       <div className="container">
-        <h1>Hi there.</h1>
-        <p>
-          I’m<span> Luigi Tarallo </span> a
-          <span> Full Stack Web Developer </span>
-          passionate about<span> technology </span>
-          and focused on building modern, efficient
-          <span> web applications</span>.
-        </p>
+        <h1>{heroContent.heading}</h1>
+        <p
+          dangerouslySetInnerHTML={{
+            __html: heroContent.description,
+          }}
+        ></p>
       </div>
       <div
         className="arrow-box"
