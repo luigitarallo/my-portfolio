@@ -10,10 +10,10 @@ export function AboutMe() {
             Born and raised in the province of Salerno, a few years after
             getting my high school diploma, I moved to Naples to pursue a
             university degree in <span>Biotechnology</span>. <br />
-            Between studying biology and enjoying a pizza "a portafoglio," I
+            Between studying biology and enjoying a pizza "a portafoglio", I
             continued to nurture my earliest passions: computers and technology
             in all its forms. I developed a deep interest in the
-            <span>Open Source</span>
+            <span> Open Source </span>
             philosophy, using
             <span> Linux-based operating systems</span> and following the
             evolution of new hardware and software technologies. In my spare
