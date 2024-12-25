@@ -1,5 +1,5 @@
 import "./AboutMe.css";
-import { aboutContent } from "../data/data";
+import { aboutContent } from "../data/content";
 
 export function AboutMe() {
   return (
@@ -27,6 +27,7 @@ export function AboutMe() {
             <div className="tech-icons">
               <ul>
                 <li>
+                  {/* HTML */}
                   <svg
                     width="60"
                     height="60"
@@ -41,6 +42,7 @@ export function AboutMe() {
                   </svg>
                 </li>
                 <li>
+                  {/* CSS */}
                   <svg
                     width="60"
                     height="60"
@@ -55,6 +57,7 @@ export function AboutMe() {
                   </svg>
                 </li>
                 <li>
+                  {/* bootstrap */}
                   <svg
                     width="60"
                     height="60"
@@ -69,6 +72,8 @@ export function AboutMe() {
                   </svg>
                 </li>
                 <li>
+                  {/* tailwind */}
+
                   <svg
                     width="60"
                     height="60"
@@ -83,6 +88,8 @@ export function AboutMe() {
                   </svg>
                 </li>
                 <li>
+                  {/* javascript */}
+
                   <svg
                     width="60"
                     height="60"
@@ -97,6 +104,8 @@ export function AboutMe() {
                   </svg>
                 </li>
                 <li>
+                  {/* typescript */}
+
                   <svg
                     width="60"
                     height="60"
@@ -111,6 +120,8 @@ export function AboutMe() {
                   </svg>
                 </li>
                 <li>
+                  {/* vue.js */}
+
                   <svg
                     width="60"
                     height="60"
@@ -125,6 +136,8 @@ export function AboutMe() {
                   </svg>
                 </li>
                 <li>
+                  {/* react.js */}
+
                   <svg
                     width="60"
                     height="60"
@@ -154,6 +167,8 @@ export function AboutMe() {
             <div className="tech-icons">
               <ul>
                 <li>
+                  {/* mysql */}
+
                   <svg
                     width="60"
                     height="60"
@@ -168,6 +183,8 @@ export function AboutMe() {
                   </svg>
                 </li>
                 <li>
+                  {/* microsoft sql server */}
+
                   <svg
                     width="60"
                     height="60"
@@ -182,6 +199,8 @@ export function AboutMe() {
                   </svg>
                 </li>
                 <li>
+                  {/* php */}
+
                   <svg
                     width="60"
                     height="60"
@@ -196,6 +215,8 @@ export function AboutMe() {
                   </svg>
                 </li>
                 <li>
+                  {/* laravel */}
+
                   <svg
                     width="60"
                     height="60"
@@ -218,6 +239,7 @@ export function AboutMe() {
                   </svg>
                 </li>
                 <li>
+                  {/* c# */}
                   <svg
                     width="60"
                     height="60"
@@ -232,6 +254,8 @@ export function AboutMe() {
                   </svg>
                 </li>
                 <li>
+                  {/* .net core */}
+
                   <svg
                     width="60"
                     height="60"
@@ -261,6 +285,8 @@ export function AboutMe() {
             <div className="tech-icons">
               <ul>
                 <li>
+                  {/* figma */}
+
                   <svg
                     width="60"
                     height="60"
@@ -275,6 +301,8 @@ export function AboutMe() {
                   </svg>
                 </li>
                 <li>
+                  {/* git */}
+
                   <svg
                     width="60"
                     height="60"
@@ -289,6 +317,8 @@ export function AboutMe() {
                   </svg>
                 </li>
                 <li>
+                  {/* vs code */}
+
                   <svg
                     width="60"
                     height="60"
@@ -315,6 +345,8 @@ export function AboutMe() {
                   </svg>
                 </li>
                 <li>
+                  {/* visual studio */}
+
                   <svg
                     width="60"
                     height="60"

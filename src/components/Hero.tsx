@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Hero.css";
-import { heroContent } from "../data/data";
+import { heroContent } from "../data/content";
 
 export function Hero() {
   // useState to check offsetY
