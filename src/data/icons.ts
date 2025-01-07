@@ -23,7 +23,7 @@ export const frontendIcons = {
         fill="#D9D9D9"
       />
     </svg>`,
-  bootstrap: `(
+  bootstrap: `
     <svg
       width="60"
       height="60"
@@ -37,7 +37,7 @@ export const frontendIcons = {
       />
     </svg>
   `,
-  tailwind: `(
+  tailwind: `
     <svg
       width="60"
       height="60"
