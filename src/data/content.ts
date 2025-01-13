@@ -4,7 +4,7 @@ export const heroContent: { heading: string; description: string } = {
   <span> Full Stack Web Developer </span>
   passionate about <span> technology </span>
   and focused on building modern, efficient
-  <span> web applications</span>.`,
+  <span>web applications</span>.`,
 };
 
 export const aboutContent: {
