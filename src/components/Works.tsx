@@ -33,7 +33,7 @@ export function Works() {
             image={investmentCalculator}
             altText="investment calculator preview"
             demoLink="https://investment-calculator-khaki-eight.vercel.app/"
-            githubLink="#"
+            githubLink="https://github.com/luigitarallo/3-project-essentials-practice"
           />
         </div>
       </div>
