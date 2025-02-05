@@ -12,3 +12,11 @@ footer {
 footer span {
   color: #78b7ff;
 }
+
+@media screen and (max-width: 610px) {
+  .footer-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
