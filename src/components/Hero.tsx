@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./Hero.css";
 import { heroContent } from "../data/content";
+import heroImage from "../assets/hero-image.jpg";
 
 export function Hero() {
   // useState to check offsetY
@@ -27,6 +28,7 @@ export function Hero() {
       className="hero"
       // change background position dynamically
       style={{
+        backgroundImage: `linear-gradient(to bottom, rgba(11,11,11,0.3), rgba(0,0,0,0.8)), url(${heroImage})`,
         backgroundPositionY: `${offsetY * 0.3}px`,
       }}
     >
