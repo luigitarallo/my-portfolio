@@ -1,6 +1,6 @@
 import "./Navbar.css";
 import { NavLink } from "./NavLink";
-
+// prova commit
 export function Navbar() {
   // function to go to a specific section when clicking nav links
   const scrollToSection = (id: string) => {
