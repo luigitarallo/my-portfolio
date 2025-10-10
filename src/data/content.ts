@@ -35,7 +35,7 @@ export const aboutContent: {
             development.`,
     `So, in <span>2023</span>, I decided to return to my hometown and
             pursue my passion with determination, enrolling in an intensive
-            <span> bootcamp </span>to become a<span> Web Developer </span>.
+            <span> bootcamp </span>to become a<span> Web Developer</span>.
             During the course, I deepened my knowledge of both
             <span> Front-End and Back-End development</span>, thanks to a
             structured program and guidance from industry professionals. In

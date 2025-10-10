@@ -1,20 +1,41 @@
 import "./Navbar.css";
 import { NavLink } from "./NavLink";
-// prova commit
+import { useActiveSection } from "../hooks/useActiveSection";
+
 export function Navbar() {
-  // function to go to a specific section when clicking nav links
+  const { activeSection, setActiveSectionManually } = useActiveSection();
+
+  // Funzione per scrollare alla sezione
   const scrollToSection = (id: string) => {
     const section = document.getElementById(id);
     if (section) {
+      // Imposta manualmente la sezione attiva prima dello scroll
+      setActiveSectionManually(id);
       section.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
+
   return (
     <nav>
       <ul>
-        <NavLink label="Home" targetId="home" onClick={scrollToSection} />
-        <NavLink label="About" targetId="about" onClick={scrollToSection} />
-        <NavLink label="Works" targetId="works" onClick={scrollToSection} />
+        <NavLink
+          label="Home"
+          targetId="home"
+          onClick={scrollToSection}
+          isActive={activeSection === "home"}
+        />
+        <NavLink
+          label="About"
+          targetId="about"
+          onClick={scrollToSection}
+          isActive={activeSection === "about"}
+        />
+        <NavLink
+          label="Works"
+          targetId="works"
+          onClick={scrollToSection}
+          isActive={activeSection === "works"}
+        />
       </ul>
     </nav>
   );
