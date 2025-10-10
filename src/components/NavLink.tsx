@@ -8,7 +8,6 @@ interface NavLinkProps {
 export function NavLink({ label, targetId, onClick, isActive }: NavLinkProps) {
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     onClick(targetId);
-    // Rimuove il focus dal button dopo il click (fix per mobile)
     e.currentTarget.blur();
   };
 

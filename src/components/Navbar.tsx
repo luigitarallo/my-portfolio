@@ -5,11 +5,9 @@ import { useActiveSection } from "../hooks/useActiveSection";
 export function Navbar() {
   const { activeSection, setActiveSectionManually } = useActiveSection();
 
-  // Funzione per scrollare alla sezione
   const scrollToSection = (id: string) => {
     const section = document.getElementById(id);
     if (section) {
-      // Imposta manualmente la sezione attiva prima dello scroll
       setActiveSectionManually(id);
       section.scrollIntoView({ behavior: "smooth", block: "start" });
     }
